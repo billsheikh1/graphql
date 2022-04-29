@@ -1,0 +1,46 @@
+{
+    "directors": [
+        {
+            "id": 1,
+            "name": "Christopher Nolan",
+            "citizenship": "UK/USA",
+            "age": 51
+        },
+        {
+            "id": 2,
+            "name": "Greta Gerwig",
+            "citizenship": "USA",
+            "age": 38
+        }
+    ],
+    "movies": [
+        {
+            "id": 1,
+            "name": "The Dark Knight",
+            "releaseYear": 2008,
+            "genre": "action",
+            "directorId": 1
+        },
+        {
+            "id": 2,
+            "name": "The Prestige",
+            "releaseYear": 2006,
+            "genre": "mystery",
+            "directorId": 1
+        },
+        {
+            "id": 3,
+            "name": "Little Women",
+            "releaseYear": 2019,
+            "genre": "drama",
+            "directorId": 2
+        },
+        {
+            "id": 4,
+            "name": "Ladybird",
+            "releaseYear": 2017,
+            "genre": "drama",
+            "directorId": 2
+        }
+    ]
+}
