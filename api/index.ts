@@ -9,8 +9,8 @@ const {
     GraphQLList,
     GraphQLSchema
  } = require('graphql'); 
-
  const { movies, directors } = require('./data.json');
+ const cors = require('cors');
 
 const MovieType = new GraphQLObjectType({
     name: 'Movie',
@@ -86,9 +86,10 @@ const schema = new GraphQLSchema({
 
 
 const app = express();
+app.use(cors());
 app.use('/graphql', graphqlHTTP({
     schema,
     graphiql: true
 }));
 
-app.listen(3000, console.log('Listening on port 3000'));
+app.listen(4000, console.log('Listening on port 4000'));
